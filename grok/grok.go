@@ -28,7 +28,7 @@ For responses longer than 4000 characters, insert a split marker <!--SPLIT--> ap
 Ensure all tags are properly closed and the response is encoded in UTF-8.
 When generating responses for the Telegram bot, always format the text using HTML tags for Telegram's HTML parse mode. Follow these rules to ensure flawless formatting:
 
-available html tags:
+available html tags, make sure only and only these tags are used, nothing else (no <ul>, <br>, <p> etc.) from html!:
 <b>bold</b>, <strong>bold</strong>
 <i>italic</i>, <em>italic</em>
 <u>underline</u>, <ins>underline</ins>
