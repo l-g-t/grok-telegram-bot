@@ -1,0 +1,12 @@
+[Unit]
+Description=grok-telegram-bot
+
+[Service]
+ExecStart=/opt/grok-telegram-bot/grok-telegram-bot
+WorkingDirectory=/opt/grok-telegram-bot
+Restart=always
+RestartSec=120s
+EnvironmentFile=/opt/grok-telegram-bot/.env
+
+[Install]
+WantedBy=multi-user.target

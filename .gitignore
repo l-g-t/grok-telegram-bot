@@ -1,0 +1,2 @@
+.env
+deploy/build/*tar.gz
